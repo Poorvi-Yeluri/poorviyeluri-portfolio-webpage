@@ -54,6 +54,12 @@
     z-index: 10; /* Place it above other elements */
 }
 
+#mobile-bottom-nav {
+    display: none; /* Hidden by default */
+}
+
+
+
 body {
     background-color: var(--primary-dark);
     font-family: Inter, sans-serif;

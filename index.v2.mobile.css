@@ -1,10 +1,11 @@
-/* Global adjustments for mobile responsiveness */
 @media only screen and (max-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
         padding: 20px;
+        padding-bottom: 60px;
         gap: 10px;
+        overflow-y: auto;
     }
     
     #nav-section {
@@ -18,6 +19,7 @@
     
     #information-section {
         padding: 20px;
+        overflow-y: auto;
     }
     
     .mobile-section-title {
@@ -27,5 +29,48 @@
         color: var(--font-medium-color);
         margin-bottom: 20px;
     }
+    
+    #mobile-bottom-nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60px;
+        background-color: var(--primary-dark); /* Dark background for nav */
+        z-index: 1000; /* Ensure it stays above other elements */
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Shadow for elevation */
+        justify-content: space-evenly;
+        border-top: 1px whitesmoke solid;
+        border-radius: 20px;
+    }
+    
+    /* Ensure each nav item fills the space properly */
+    .bottom-nav-link-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px; 
+        flex: 1;  
+        border-right: 1px solid whitesmoke;
+        background-color: var(--primary-dark); 
+        transition: background-color 0.3s ease; 
+    }
+    
+    /* Active state styling */
+    .bottom-nav-link-item.active {
+        color: white;
+        font-weight: bold;
+    }
 
+    .bottom-nav-link-item:last-child {
+        border-right: none;
+    }
+    
+    .bottom-nav-link-item a {
+        text-decoration: none;
+        color: inherit;
+    }
 }

@@ -244,10 +244,28 @@
             </section>
             <section id="projects-section">
                 <div class="mobile-section-title">Projects</div>
-                <div class="project-cards">
-                    
-                </div>
+                <div class="project-cards"></div>
             </section>
+        </div>
+        <div id="mobile-bottom-nav">
+            <div
+                class="bottom-nav-link-item small-header-text"
+                data-section="about-section"
+            >
+                <a href="#about-section">ABOUT</a>
+            </div>
+            <div
+                class="bottom-nav-link-item small-header-text"
+                data-section="experience-section"
+            >
+                <a href="#experience-section">EXPERIENCE</a>
+            </div>
+            <div
+                class="bottom-nav-link-item small-header-text"
+                data-section="projects-section"
+            >
+                <a href="#projects-section">PROJECTS</a>
+            </div>
         </div>
     </body>
     <script>
@@ -299,4 +317,35 @@
             window.addEventListener("hashchange", updateActiveLink);
         });
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const bottomNavLinks = document.querySelectorAll("#mobile-bottom-nav .bottom-nav-link-item");
+    
+        // Function to remove the active class from all nav links
+        function removeActiveClasses() {
+            bottomNavLinks.forEach((link) => link.classList.remove("active"));
+        }
+    
+        // Add click event listeners to bottom nav links
+        bottomNavLinks.forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.stopPropagation(); // Prevent click event from propagating to the document
+                removeActiveClasses(); // Remove active class from all links
+                link.classList.add("active"); // Add active class to the clicked link
+            });
+        });
+    
+        // Optional: Prevent removing the active class when clicking outside the nav
+        document.addEventListener("click", (event) => {
+            const clickedInsideNav = event.target.closest("#mobile-bottom-nav");
+            if (!clickedInsideNav) {
+                // Do nothing if clicked outside of the nav; active stays as is
+                return;
+            }
+        });
+    });
+
+
+    </script>
+   
 </html>
