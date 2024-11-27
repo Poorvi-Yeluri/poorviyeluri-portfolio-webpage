@@ -1,0 +1,16 @@
+{
+  "name": "digital-resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.7"
+  }
+}

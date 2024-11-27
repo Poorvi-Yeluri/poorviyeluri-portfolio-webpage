@@ -1,0 +1,31 @@
+/* Global adjustments for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+    
+    #nav-section {
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    #nav-links {
+        display: none;
+    }
+    
+    #information-section {
+        padding: 20px;
+    }
+    
+    .mobile-section-title {
+        display: flex;
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-medium);
+        color: var(--font-medium-color);
+        margin-bottom: 20px;
+    }
+
+}
