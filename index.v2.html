@@ -318,34 +318,35 @@
         });
     </script>
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const bottomNavLinks = document.querySelectorAll("#mobile-bottom-nav .bottom-nav-link-item");
-    
-        // Function to remove the active class from all nav links
-        function removeActiveClasses() {
-            bottomNavLinks.forEach((link) => link.classList.remove("active"));
-        }
-    
-        // Add click event listeners to bottom nav links
-        bottomNavLinks.forEach((link) => {
-            link.addEventListener("click", (event) => {
-                event.stopPropagation(); // Prevent click event from propagating to the document
-                removeActiveClasses(); // Remove active class from all links
-                link.classList.add("active"); // Add active class to the clicked link
+        document.addEventListener("DOMContentLoaded", () => {
+            const bottomNavLinks = document.querySelectorAll(
+                "#mobile-bottom-nav .bottom-nav-link-item",
+            );
+
+            // Function to remove the active class from all nav links
+            function removeActiveClasses() {
+                bottomNavLinks.forEach((link) =>
+                    link.classList.remove("active"),
+                );
+            }
+
+            // Add click event listeners to bottom nav links
+            bottomNavLinks.forEach((link) => {
+                link.addEventListener("click", (event) => {
+                    event.stopPropagation(); // Prevent click event from propagating to the document
+                    removeActiveClasses(); // Remove active class from all links
+                    link.classList.add("active"); // Add active class to the clicked link
+                });
+            });
+
+            document.addEventListener("click", (event) => {
+                const clickedInsideNav =
+                    event.target.closest("#mobile-bottom-nav");
+                if (!clickedInsideNav) {
+                    // Do nothing if clicked outside of the nav; active stays as is
+                    return;
+                }
             });
         });
-    
-        // Optional: Prevent removing the active class when clicking outside the nav
-        document.addEventListener("click", (event) => {
-            const clickedInsideNav = event.target.closest("#mobile-bottom-nav");
-            if (!clickedInsideNav) {
-                // Do nothing if clicked outside of the nav; active stays as is
-                return;
-            }
-        });
-    });
-
-
     </script>
-   
 </html>

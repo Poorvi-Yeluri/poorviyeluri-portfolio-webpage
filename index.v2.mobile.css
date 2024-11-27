@@ -22,6 +22,16 @@
         overflow-y: auto;
     }
     
+    #experience-section {
+        overflow-y: auto;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
     .mobile-section-title {
         display: flex;
         font-size: var(--font-size-medium);
