@@ -269,23 +269,38 @@
         </div>
     </body>
     <script>
-        const gradientOverlay = document.getElementById("gradient-overlay");
-        const secondaryDarkColor = getComputedStyle(document.documentElement)
-            .getPropertyValue("--secondary-dark")
-            .trim(); // Get the secondary-dark color
-
-        document.addEventListener("mousemove", (e) => {
-            const { clientX, clientY } = e;
-            const xPercentage = (clientX / window.innerWidth) * 100;
-            const yPercentage = (clientY / window.innerHeight) * 100;
-
-            gradientOverlay.style.background = `radial-gradient(
-          circle at ${xPercentage}% ${yPercentage}%,
-          rgba(29, 78, 216, 0.15) 10%,
+      const gradientOverlay = document.getElementById("gradient-overlay");
+    
+      // Check if the device is mobile (or a small screen)
+      const isMobile = window.innerWidth <= 768; // You can adjust this condition
+    
+      // Apply mouse move effect for desktop
+      document.addEventListener("mousemove", (e) => {
+        if (!isMobile) {
+          const { clientX, clientY } = e;
+          const xPercentage = (clientX / window.innerWidth) * 100;
+          const yPercentage = (clientY / window.innerHeight) * 100;
+    
+          gradientOverlay.style.background = `radial-gradient(
+            circle at ${xPercentage}% ${yPercentage}%,
+            rgba(29, 78, 216, 0.15) 10%,
+            transparent 90%
+          )`;
+        }
+      });
+    
+      // On mobile, apply a fixed radial gradient that covers the entire screen
+      if (isMobile) {
+        gradientOverlay.style.background = `radial-gradient(
+          circle at top left,
+          rgba(29, 78, 216, 0.15) 20%,
           transparent 90%
         )`;
-        });
+        gradientOverlay.style.backgroundAttachment = 'fixed'; // Fix the background in place
+      }
     </script>
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const navLinks = document.querySelectorAll(
