@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
+        <meta name="theme-color" content="#060C20"/>
         <link rel="stylesheet" href="index.v2.css" />
         <link rel="stylesheet" href="index.v2.mobile.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -270,11 +271,9 @@
     </body>
     <script>
       const gradientOverlay = document.getElementById("gradient-overlay");
+      const isMobile = window.innerWidth <= 768; 
     
-      // Check if the device is mobile (or a small screen)
-      const isMobile = window.innerWidth <= 768; // You can adjust this condition
-    
-      // Apply mouse move effect for desktop
+      // Mouse move effect for desktop
       document.addEventListener("mousemove", (e) => {
         if (!isMobile) {
           const { clientX, clientY } = e;
@@ -289,14 +288,13 @@
         }
       });
     
-      // On mobile, apply a fixed radial gradient that covers the entire screen
       if (isMobile) {
         gradientOverlay.style.background = `radial-gradient(
           circle at top left,
           rgba(29, 78, 216, 0.15) 20%,
           transparent 90%
         )`;
-        gradientOverlay.style.backgroundAttachment = 'fixed'; // Fix the background in place
+        gradientOverlay.style.backgroundAttachment = 'fixed'; 
       }
     </script>
 
@@ -338,19 +336,17 @@
                 "#mobile-bottom-nav .bottom-nav-link-item",
             );
 
-            // Function to remove the active class from all nav links
             function removeActiveClasses() {
                 bottomNavLinks.forEach((link) =>
                     link.classList.remove("active"),
                 );
             }
 
-            // Add click event listeners to bottom nav links
             bottomNavLinks.forEach((link) => {
                 link.addEventListener("click", (event) => {
-                    event.stopPropagation(); // Prevent click event from propagating to the document
-                    removeActiveClasses(); // Remove active class from all links
-                    link.classList.add("active"); // Add active class to the clicked link
+                    event.stopPropagation(); 
+                    removeActiveClasses(); 
+                    link.classList.add("active"); 
                 });
             });
 
@@ -358,7 +354,6 @@
                 const clickedInsideNav =
                     event.target.closest("#mobile-bottom-nav");
                 if (!clickedInsideNav) {
-                    // Do nothing if clicked outside of the nav; active stays as is
                     return;
                 }
             });
