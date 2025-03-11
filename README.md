@@ -1,3 +1,3 @@
-# poorvi-yeluri-portfolio-website
+# Portfolio Webpage
 
-Portfolio website built using HTML, CSS and Vanilla Javascript.
+Built using HTML, CSS and Vanilla Javascript.
