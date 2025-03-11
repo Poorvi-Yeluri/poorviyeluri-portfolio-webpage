@@ -2,7 +2,7 @@
     /* --primary-dark: #0f172a; */
     --primary-dark: #000000;
     --secondary-dark:#134e4a;  
-    --text-dark: #5eead4;
+    --text-dark: #e5e7eb;
     --text-opacity: 1;
     --font-header-color: #e5e7eb;
     --font-medium-color: rgba(229, 231, 235, var(--text-opacity)); 
@@ -17,6 +17,7 @@
     --font-weight-normal: 300;
     --font-weight-small: 700;
 }
+
 
 .header-text {
     font-size: var(--font-size-large);
