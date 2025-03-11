@@ -27,7 +27,7 @@
     }
     
     #experience-section {
-        overflow-y: auto;
+        overflow-y: scroll;     
     }
     
     .card {

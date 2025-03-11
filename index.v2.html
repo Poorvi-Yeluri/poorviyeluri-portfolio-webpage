@@ -4,13 +4,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <meta name="theme-color" content="#060C20"/>
-        <link rel="stylesheet" href="index.v2.css" />
-        <link rel="stylesheet" href="index.v2.mobile.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="index.mobile.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-            rel="stylesheet"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         />
     </head>
     <body>
@@ -18,36 +18,11 @@
         <div id="nav-section">
             <div id="profile">
                 <div class="header-text">Poorvi Yeluri</div>
-                <div class="sub-header-text">Web Developer</div>
+                <div class="sub-header-text">Fullstack Web Developer</div>
                 <div class="content-text">
-                    Passionate about creating beautiful interfaces and
-                    performant websites.
+                    Melbourne, VIC, Australia
                 </div>
             </div>
-            <div id="nav-links">
-                <div
-                    id="about-nav-link"
-                    class="nav-link-item small-header-text"
-                    data-section="about-section"
-                >
-                    <a href="#about-section">ABOUT</a>
-                </div>
-                <div
-                    id="experience-nav-link"
-                    class="nav-link-item small-header-text"
-                    data-section="experience-section"
-                >
-                    <a href="#experience-section">EXPERIENCE</a>
-                </div>
-                <div
-                    id="projects-nav-link"
-                    class="nav-link-item small-header-text"
-                    data-section="projects-section"
-                >
-                    <a href="#projects-section">PROJECTS</a>
-                </div>
-            </div>
-
             <div id="social-media-buttons">
                 <ul aria-label="Social media">
                     <li>
@@ -118,34 +93,50 @@
                     </li>
                 </ul>
             </div>
+            <div id="nav-links">
+                <div
+                    id="about-nav-link"
+                    class="nav-link-item small-header-text"
+                    data-section="about-section"
+                >
+                    <a href="#about-section">ABOUT</a>
+                </div>
+                <div
+                    id="experience-nav-link"
+                    class="nav-link-item small-header-text"
+                    data-section="experience-section"
+                >
+                    <a href="#experience-section">EXPERIENCE</a>
+                </div>
+                <div
+                    id="projects-nav-link"
+                    class="nav-link-item small-header-text"
+                    data-section="projects-section"
+                >
+                    <a href="#projects-section">PROJECTS</a>
+                </div>
+            </div>
+
+            
         </div>
 
         <div id="information-section">
             <section id="about-section">
                 <div class="mobile-section-title">About</div>
-                <div class="content-text">
-                    I’m a final year student at Monash University, currently
-                    studying a
-                    <strong style="color: white">
+                <div class="content-text" style="line-height: 1.5em;">
+                    Hi, I'm <strong style="color: white">Poorvi Yeluri</strong>, a highly motivated and results-driven Full Stack Developer based in Melbourne, Australia.
+                    <br>
+                    <br>
+                    I am currently pursuing a <strong style="color: white">
                         Bachelor of Information Technology</strong
                     >
                     with a major in
-                    <strong style="color: white">Software Development</strong>.
-                    I'm passionate about creating accessible, pixel-perfect user
-                    interfaces that merge thoughtful design with solid
-                    engineering practices. My ideal work lies at the
-                    intersection of design and development, crafting experiences
-                    that are both visually appealing and optimized for
-                    performance and usability. <br /><br />
-                    In my academic journey, I’ve been focusing on mastering
-                    software development principles and have explored a variety
-                    of fields within the tech world. I’m constantly working on
-                    honing my skills and pushing the boundaries of what I can
-                    achieve as a full-stack developer.
-                    <br /><br />
-                    Outside of my studies, I enjoy spending my time playing
-                    guitar, indulging in music, playing tennis, and watching
-                    MMA.
+                    <strong style="color: white">Software Development</strong> and minors in <strong style="color: white">Web and Mobile App Development</strong>. I have hands-on experience in full-stack development, specializing in JavaScript, TypeScript, Node.js, and frontend frameworks like React and Next.js.
+                    <br>
+                    <br>
+                    With a background in backend systems and API development, I have contributed to improving code efficiency and optimizing system performance in previous roles at Muzigal and through personal projects like Postmate. I am passionate about problem-solving, automation, and delivering impactful digital solutions.
+
+                    I thrive in collaborative environments and believe in continuous learning and innovation. <div style="color: whitesmoke;"> Seeking opportunities to apply and expand technical skills in a challenging environment. </div>
                 </div>
             </section>
             <section id="experience-section">
@@ -159,10 +150,12 @@
                             NestJS API Developer &middot; Postmate
                         </div>
                         <div class="card-content">
-                            Developed a NestJS backend for an image service React Native app.
-                            Implemented modern authentication practices such as Rotated API keys and AuthGuards.
-                            Developed CRUD models using TypeORM, the Class Validator package, and other tools to ensure robust data validation and management.
-                            Developed a FastAPI image generation service in Python, utilizing the Flux.dev AI model and Hugging Face API for image creation. Integrated the ZenQuotes API to generate quotes and used the Pillow library to overlay quotes onto the generated images.
+                            <ul>
+                                <li>Developed a NestJS backend for an image service React Native app.</li>
+                                <li>Implemented modern authentication practices such as Rotated API keys and AuthGuards.</li>
+                                <li>Developed CRUD models using TypeORM, the Class Validator package, and other tools to ensure robust data validation and management.</li>
+                                <li>Developed a FastAPI image generation service in Python, utilizing the Flux.dev AI model and Hugging Face API for image creation. Integrated the ZenQuotes API to generate quotes and used the Pillow library to overlay quotes onto the generated images.</li>
+                            </ul>
                         </div>
                         <div class="card-footer">
                             <div class="pill">Typescript</div>
@@ -171,7 +164,7 @@
                             <div class="pill">MySQL</div>
                             <div class="pill">Python</div>
                             <div class="pill">FastAPI</div>
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -183,14 +176,16 @@
                             Node.js Backend Developer &middot; Muzigal
                         </div>
                         <div class="card-content">
-                            Developed and optimized an internal CRM using Node.js, Express.js, and MySQL, streamlining franchisee operations by replacing manual Excel and Google Sheets workflows with an automated platform.
-                            Integrated Shopify REST and GraphQL APIs to automate retail order processing within the CRM, streamlining workflows and increasing the order completion rate by 20%.
-                            Partially migrated the the backend from callbacks to promises, reducing callback hell and improving developer efficiency.
-                            Implemented WebSockets to handle real-time Razorpay payment events, reducing checkout failures by 25% and eliminating payment-related support tickets.
-                            Built a Zendesk-based ticketing system, reducing franchisee support response time from 2-3 days to 12 hours on average.
-                            Learned Next.js 13 (Page Router) and took responsibility for maintaining the existing student web portal.
-                            Conducted training sessions for franchisee partners and their staff to ensure effective use of the CRM.
-                            Built a dashboard to visualize franchisee analytics using Highcharts, Bootstrap, and jQuery.
+                            <ul>
+                                <li>Developed and optimized an internal CRM using Node.js, Express.js, and MySQL, streamlining franchisee operations by replacing manual Excel and Google Sheets workflows with an automated platform.</li>
+                                <li>Integrated Shopify REST and GraphQL APIs to automate retail order processing within the CRM, streamlining workflows and increasing the order completion rate by 20%.</li>
+                                <li>Partially migrated the backend from callbacks to promises, reducing callback hell and improving developer efficiency.</li>
+                                <li>Implemented WebSockets to handle real-time Razorpay payment events, reducing checkout failures by 25% and eliminating payment-related support tickets.</li>
+                                <li>Built a Zendesk-based ticketing system, reducing franchisee support response time from 2-3 days to 12 hours on average.</li>
+                                <li>Learned Next.js 13 (Page Router) and took responsibility for maintaining the existing student web portal.</li>
+                                <li>Conducted training sessions for franchisee partners and their staff to ensure effective use of the CRM.</li>
+                                <li>Built a dashboard to visualize franchisee analytics using Highcharts, Bootstrap, and jQuery.</li>
+                            </ul>
                         </div>
                         <div class="card-footer">
                             <div class="pill">Node.js</div>
@@ -214,12 +209,11 @@
                             Flutter Developer Intern &middot; Muzigal
                         </div>
                         <div class="card-content">
-                            Migrated student and teacher apps to null safety, upgrading from Flutter 1.24.0-6.0.pre to 3.10,
-                            resulting in 14% fewer runtime crashes.
-                            Refactored the student app codebase by implementing the Bloc pattern for state management, reducing
-                            code redundancy and enhancing scalability.
-                            Documented the student app codebase using Swagger, and also the decision processes taken. This
-                            helped in faster onboarding and ease of understanding the codebase for newer colleagues.
+                            <ul>
+                                <li>Migrated student and teacher apps to null safety, upgrading from Flutter 1.24.0-6.0.pre to 3.10, resulting in 14% fewer runtime crashes.</li>
+                                <li>Refactored the student app codebase by implementing the Bloc pattern for state management, reducing code redundancy and enhancing scalability.</li>
+                                <li>Documented the student app codebase using Swagger, and also the decision processes taken. This helped in faster onboarding and ease of understanding the codebase for newer colleagues.</li>
+                            </ul>
                         </div>
                         <div class="card-footer">
                             <div class="pill">Flutter</div>

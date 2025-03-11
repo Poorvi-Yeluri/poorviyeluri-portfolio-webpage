@@ -5,7 +5,7 @@
     --text-dark: #5eead4;
     --text-opacity: 1;
     --font-header-color: #e5e7eb;
-    --font-medium-color: rgba(229, 231, 235, var(--text-opacity)); /* tex-header-color, RGBA implementation */
+    --font-medium-color: rgba(229, 231, 235, var(--text-opacity)); 
     --font-content-color: rgb(148 163 184/var(--text-opacity));
     --font-small-header-color: rgb(226 232 240/var(--text-opacity));
     --font-size-large: 3rem;
@@ -31,7 +31,7 @@
 }
 
 .content-text {
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-normal);
     color: var(--font-content-color);
     line-height: 26px;
@@ -50,15 +50,17 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    pointer-events: none; /* Ensure it doesn't block interactions with other elements */
-    z-index: 10; /* Place it above other elements */
+    pointer-events: none; 
+    z-index: 10; 
 }
 
 #mobile-bottom-nav {
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
-
+* {
+    scrollbar-width: none;
+}
 
 body {
     background-color: var(--primary-dark);
@@ -67,10 +69,10 @@ body {
     margin: 0;
     padding-top: 80px;
     padding-bottom: 20px;
-    padding-left: 200px;  /* Padding to provide spacing around the body */
+    padding-left: 200px;  
     padding-right: 200px;
     gap: 40px;      
-    overflow-y:hidden;
+    overflow: hidden;
 }
 
 #nav-section {
@@ -85,36 +87,33 @@ body {
     height: 700px;
 }
 
-
 #information-section {
     flex-grow: 1;         
     display: flex;
     flex-direction: column;
     gap: 100px;
     padding: 10px;
-    overflow-y: auto;     
+    overflow-y: scroll;     
     box-sizing: border-box; 
     scroll-behavior: smooth;
     height: 700px;
 }
 
-/* Hide all sections initially */
 #information-section > section {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Show the targeted section */
 #information-section > section:target {
     display: block;
     opacity: 1;
 }
 
-/* Ensure the #about-section is shown by default if no other target is active */
 #information-section:not(:has(section:target)) > #about-section {
     display: block;
     opacity: 1;
+
 }
 
 
@@ -138,39 +137,37 @@ body {
 
 .nav-link-item {
     display: flex;
-    align-items: center;  /* Vertically centers the text */
-    padding-left: 40px;   /* Adds space between the line and the text */
-    position: relative;   /* Necessary for positioning the pseudo-element */
+    align-items: center;  
+    padding-left: 40px;  
+    position: relative;   
     transition: color 0.5s ease;
 }
 
 .nav-link-item.active {
     padding-left: 80px;
-    color: var(--font-medium-color); /* Highlight color */
+    color: var(--font-medium-color); 
 }
 
-/* The line under the link when it's active */
 .nav-link-item.active::before {
-    width: 65px;  /* Increase line width when active */
-    background-color: var(--font-medium-color); /* Change line color on hover */
+    width: 65px;  
+    background-color: var(--font-medium-color); 
 }
 
-/* Regular state for the line */
 .nav-link-item::before {
-    content: '';  /* Required for the pseudo-element */
+    content: '';  
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;  /* Default line width */
-    height: 1px;  /* Thickness of the line */
-    background-color: var(--font-content-color);  /* Default line color */
-    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition for width and color */
+    width: 30px;  
+    height: 1px;  
+    background-color: var(--font-content-color);  
+    transition: width 0.3s ease, background-color 0.3s ease; 
 }
 
 .nav-link-item:hover {
     padding-left: 80px;
-    color: var(--font-medium-color); /
+    color: var(--font-medium-color); 
 }
 
 
@@ -206,15 +203,13 @@ body {
 #social-media-buttons svg {
     width: 25px;
     height: auto;
-    fill: currentColor;  /* Ensure the icons inherit the color of the link */
+    fill: currentColor;  
 }
 
-/* Hover effect for social media icons */
 #social-media-buttons a:hover {
     color: var(--font-medium-color); 
 }
 
-/* Ensure that the text is hidden visually, but still accessible to screen readers */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -236,24 +231,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .card {
     display: flex;
-    flex-direction: row; /* Ensures content flows vertically */
+    flex-direction: row; 
     gap: 10px;
     position: relative;
     padding: 20px;
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.03); /* Less transparent for a more subtle glass effect */
+    background: rgba(255, 255, 255, 0.03); 
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    backdrop-filter: blur(40px); /* Glassy effect */
-    transition: all 0.3s ease; /* Smooth hover transition */
-    overflow: hidden; /* Prevent content overflow */
-    transform: scale(1.02); /* Slight zoom-in effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(40px); 
+    transition: all 0.3s ease; 
+    overflow: hidden;
+    transform: scale(1.02); 
 }
 
 
@@ -261,19 +258,18 @@ body {
     color: var(--text-dark);
 }
 
-/* Optional: Style for the card's content, to ensure text readability */
 .card .content {
-    z-index: 1; /* Keep content above the blurred background */
-    color: #fff; /* Text color to stand out */
+    z-index: 1; 
+    color: #fff; 
 }
 
 
 .card-date {
     display: flex;
     flex: 0.4;
-    font-size: var(--font-size-small);  /* Optional: You can adjust the font size */
+    font-size: var(--font-size-small);  
     font-weight: var(--font-weight-medium);
-    color: var(--font-content-color);  /* Ensure the color matches your design */
+    color: var(--font-content-color);  
     letter-spacing: 1px;
 }
 
@@ -297,6 +293,8 @@ body {
     font-weight: var(--font-weight-normal);
     color: var(--font-content-color);
     line-height: 26px;
+    padding: 0;
+    margin: 0;
 }
 
 .card-footer {
