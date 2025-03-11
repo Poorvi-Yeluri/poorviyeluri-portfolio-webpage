@@ -32,7 +32,7 @@
 }
 
 .content-text {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-normal);
     font-weight: var(--font-weight-normal);
     color: var(--font-content-color);
     line-height: 26px;
@@ -115,6 +115,50 @@ body {
     display: block;
     opacity: 1;
 
+}
+
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    flex: 1 1 200px; 
+    min-width: 200px;
+}
+
+.skill-category-title {
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-medium);
+    color: var(--font-medium-color);
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    color: var(--font-content-color);
+    line-height: 26px;
 }
 
 
