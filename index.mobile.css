@@ -13,7 +13,6 @@
         background-position: top left;
     }
 
-    
     #nav-section {
         padding: 20px;
         gap: 40px;
@@ -54,15 +53,14 @@
         right: 0;
         width: 100%;
         height: 60px;
-        background-color: var(--primary-dark); /* Dark background for nav */
-        z-index: 1000; /* Ensure it stays above other elements */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Shadow for elevation */
+        background-color: var(--primary-dark); 
+        z-index: 1000; 
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
         justify-content: space-evenly;
         border-top: 1px whitesmoke solid;
         border-radius: 20px;
     }
     
-    /* Ensure each nav item fills the space properly */
     .bottom-nav-link-item {
         display: flex;
         justify-content: center;
@@ -74,7 +72,6 @@
         transition: background-color 0.3s ease; 
     }
     
-    /* Active state styling */
     .bottom-nav-link-item.active {
         color: white;
         font-weight: bold;
