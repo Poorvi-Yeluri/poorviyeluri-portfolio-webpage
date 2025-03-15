@@ -53,27 +53,18 @@ function populateSkillsSection(skills) {
   document.getElementById("skills-section").innerHTML = skillsHTML;
 }
 
-function formatDate(dateString, defaultString) {
-  if (!dateString) return defaultString;
-
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
-}
 
 function populateExperienceSection(workExperience) {
   const experienceSection = document.getElementById("experience-section");
   const experienceHTML = `
     <div class="mobile-section-title">Experience</div>
     ${workExperience.map(job => {
-      const startDate = formatDate(job.startDate);
-      const endDate = formatDate(job.endDate);
-
       return `
         <div class="card">
         <div class="card-info">
         <div class="card-header">${job.position}</div>
         <div class="card-sub-header">${job.company}</div>
-        <div class="card-date small-header-text">${startDate} – ${endDate}</div>
+        <div class="card-date small-header-text">${job.startDate} – ${job.endDate}</div>
             <div class="card-content">
               <ul>
                 ${job.highlights.map(highlight => `<li>${highlight}</li>`).join("")}
