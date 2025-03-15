@@ -1,0 +1,185 @@
+{
+    "selectedTemplate": 1,
+    "headings": {
+      "skills": "",
+      "projects": "",
+      "work": "Work Experience"
+    },
+    "basics": {
+      "name": "Poorvi Kaarthikeya Yeluri",
+      "email": "poorvi.yeluri@gmail.com",
+      "phone": "0416125418",
+      "website": "https://poorviyeluri.netlify.app/index.v2.html",
+      "location": {
+        "address": "Melbourne CBD, VIC 3000"
+      },
+      "summary": "Highly motivated IT student at Monash University with practical experience in full-stack development. Proven ability to quickly master new technologies and improve code efficiency, as demonstrated in roles at Muzigal and Postmate. Adept at problem-solving, teamwork, and delivering impactful solutions. Skilled in JavaScript, TypeScript, Node.js, and modern frontend frameworks. Seeking opportunities to apply and expand technical skills in a challenging environment."
+    },
+    "education": [
+      {
+        "institution": "Monash University",
+        "location": "Clayton, VIC 3168",
+        "area": "(Software Development)",
+        "studyType": "Bachelor of Information Technology",
+        "gpa": "",
+        "endDate": "Dec 2025",
+        "startDate": "Expected to Graduate"
+      }
+    ],
+    "work": [
+      {
+        "highlights": [
+          "Developed a NestJS backend for an image service React Native app.",
+          "Implemented authentication practices such as JWT, Rotated API keys and AuthGuards.",
+          "Developed CRUD models using TypeORM, the Class Validator package, and other tools to ensure robust data validation and management.",
+          "Developed a FastAPI image generation service in Python, utilizing the Flux.dev AI model and Hugging Face API for image creation. Integrated the ZenQuotes API to generate quotes and used the Pillow library to overlay quotes onto the generated images."
+        ],
+        "company": "Postmate",
+        "position": "NestJS API Developer",
+        "location": "Remote (Melbourne)",
+        "startDate": "Oct 2024",
+        "endDate": "Feb 2025"
+      },
+      {
+        "highlights": [
+          "Enhanced the functionality and stability of an internal CRM platform by developing new business modules and contributing to bug fixes using Node.js, Express.js, and MySQL. ",
+          "Integrated Shopify REST and GraphQL APIs to automate retail order processing within the CRM, streamlining workflows and increasing the order completion rate by 20%.",
+          "Implemented WebSockets to handle real-time Razorpay payment events, reducing checkout failures by 25% and eliminating payment-related support tickets.",
+          "Built a dashboard to visualize franchisee analytics using Highcharts, Bootstrap, and jQuery.",
+          "Worked on an internal ticketing system that used the Zendesk API, reducing franchisee support response time from 2-3 days to 12 hours on average.",
+          "Handled customer issue troubleshooting using the internal CRM and database analysis.",
+          "Conducted training sessions for franchisee partners and their staff to ensure effective use of the CRM.",
+          "Learned Next.js 13 (Page Router) and took responsibility for maintaining the existing student web portal."
+        ],
+        "company": "Muzigal",
+        "position": "Node.js Backend Developer",
+        "startDate": "Sep 2023",
+        "endDate": "Mar 2024",
+        "location": "Remote (Melbourne)"
+      },
+      {
+        "company": "Muzigal",
+        "position": "Flutter Developer Intern",
+        "website": "",
+        "startDate": "Jul 2023",
+        "highlights": [
+          "Migrated the student app to null safety, upgrading from Flutter 1.24.0-6.0.pre to 3.10, resulting in fewer runtime crashes.",
+          "Optimized the student app codebase through refactoring, centralizing shared logic and components to reduce redundancy and improve scalability.",
+          "Documented the student app codebase, and also the decision processes taken. This helped in faster onboarding and ease of understanding the codebase for newer colleagues."
+        ],
+        "endDate": "Sep 2023",
+        "location": "Telangana, India"
+      },
+      {
+        "highlights": [
+          "Provided excellent customer service during overnight shifts, ensuring store operations ran smoothly.",
+          "Operated the POS system to process fuel releases, scan items, and handle customer transactions via EFTPOS and cash.",
+          "Reconciled the cash register at the end of each shift to ensure accurate financial reporting.",
+          "Monitored fuel levels to ensure they remained above 20% and coordinated timely deliveries by liaising with 7-Eleven main staff.",
+          "Addressed customer inquiries, maintained store cleanliness, and restocked inventory as per the delivery docket items.",
+          "Stocked overnight deliveries as per the merchandising planogram provided."
+        ],
+        "position": "Retail Assistant",
+        "company": "7-Eleven",
+        "location": "Melbourne, VIC 3000",
+        "startDate": "Jun 2022",
+        "endDate": "Apr 2023"
+      },
+      {
+        "highlights": [
+          "Provided friendly and efficient customer service in a high-paced environment.",
+          "Assisted with food preparation while ensuring compliance with cleanliness and safety standards.",
+          "Developed strong multitasking and problem-solving skills through managing multiple tasks under pressure."
+        ],
+        "startDate": "Feb 2022 ",
+        "endDate": "Jun 2022",
+        "company": "McDonald's",
+        "position": "Restaurant Crew Member",
+        "location": "Clayton, VIC 3168"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Programming Languages",
+        "level": "",
+        "keywords": [
+          "Javascript",
+          "Typescript",
+          "PHP",
+          "Dart",
+          "Python"
+        ]
+      },
+      {
+        "keywords": [
+          "MySQL",
+          "MongoDB",
+          "Firebase",
+          "Neo4j"
+        ],
+        "name": "Databases"
+      },
+      {
+        "keywords": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "jQuery",
+          "React.js",
+          "Bootstrap (V3, V4)"
+        ],
+        "name": "Frontend"
+      },
+      {
+        "keywords": [
+          "Node.js",
+          "Express.js",
+          "Next.js",
+          "NestJS",
+          "TypeORM",
+          "CakePHP"
+        ],
+        "name": "Backend"
+      },
+      {
+        "keywords": [
+          "Docker",
+          "AWS",
+          "Git",
+          "Github Desktop",
+          "Jira",
+          "Trello",
+          "VSCode",
+          "WebStorm"
+        ],
+        "name": "DevOps & Tools"
+      }
+    ],
+    "projects": [
+      {
+        "name": "",
+        "description": "",
+        "url": "",
+        "keywords": [
+          ""
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "title": "",
+        "date": "",
+        "awarder": "",
+        "summary": ""
+      }
+    ],
+    "sections": [
+      "templates",
+      "profile",
+      "work",
+      "skills",
+      "education",
+      "projects",
+      "awards"
+    ]
+  }
