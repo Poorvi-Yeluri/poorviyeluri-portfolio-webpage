@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupNavigation();
   setupMobileNavigation();
   setupGradientOverlay();
-  populateResume();
+  populateResume(); // Fills the details in the resume
 });
 
 function populateResume() {
