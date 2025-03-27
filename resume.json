@@ -32,9 +32,9 @@
           "Developed a NestJS backend for an image service React Native app.",
           "Implemented authentication practices such as JWT, Rotated API keys and AuthGuards.",
           "Developed CRUD models using TypeORM, the Class Validator package, and other tools to ensure robust data validation and management.",
-          "Developed a FastAPI image generation service in Python, utilizing the Flux.dev AI model and Hugging Face API for image creation. Integrated the ZenQuotes API to generate quotes and used the Pillow library to overlay quotes onto the generated images."
+          "Developed a FastAPI image generation service in Python, utilizing the Flux.dev AI model and Hugging Face API for image creation. Integrated an quote generator and used the Pillow library to overlay text on images."
         ],
-        "company": "Postmate",
+        "company": "Muzigal",
         "position": "NestJS API Developer",
         "location": "Remote (Melbourne)",
         "startDate": "Oct 2024",
