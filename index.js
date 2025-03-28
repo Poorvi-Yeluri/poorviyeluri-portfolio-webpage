@@ -25,7 +25,7 @@ function populateAboutSection(basics) {
         <strong style="color: white">Bachelor of Information Technology</strong> with a focus on
         <strong style="color: white">Software Development</strong>.
       </p>
-     <p>A highly motivated IT student at Monash University with practical experience in full-stack development, I thrive on solving complex problems and building efficient, scalable solutions.</p> 
+     <p>A highly motivated IT student at Monash University with practical experience in <strong style="color: white">Full-stack development</strong>, I thrive on solving problems and building efficient, scalable solutions.</p> 
 
 <p>My passion lies in building end-to-end solutions that are both scalable and user-centric. During my time at Muzigal, a global EdTech platform for learning music, I contributed to improving their internal CRM and backend systems. This role sharpened my ability to quickly master new technologies and optimize code efficiency. I'm proficient in <strong style="color: white">JavaScript</strong>, <strong style="color: white">TypeScript</strong>, <strong style="color: white">Node.js</strong>, and modern frontend frameworks.</p> 
 
